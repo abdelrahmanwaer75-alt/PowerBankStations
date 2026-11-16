@@ -1,0 +1,1 @@
+package com.powerbank.entity; import jakarta.persistence.*; @Entity public class Station {@Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; public String name; public String address; public double latitude; public double longitude; public int capacity; public String status="ACTIVE"; public String openingHours="24/7"; public Station(){} }

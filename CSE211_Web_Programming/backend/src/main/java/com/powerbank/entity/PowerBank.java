@@ -1,0 +1,1 @@
+package com.powerbank.entity; import jakarta.persistence.*; @Entity @Table(name="powerbanks") public class PowerBank {@Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; public String serialNumber; public String status="AVAILABLE"; public Integer batteryLevel=100; @ManyToOne public Station station; public PowerBank(){} }

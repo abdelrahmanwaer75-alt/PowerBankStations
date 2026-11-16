@@ -1,0 +1,4 @@
+USE powerbank;
+INSERT INTO users(name,email,phone,password,role) VALUES ('Demo Customer','customer@example.com','01000000000','pbkdf2_sha256$210000$j7K0/ch9dJgdGM1U6qOi7g==$qClytbDEqCkEeHVolJqzMZrbQY3Wb5nwambF/zqdYyU=','CUSTOMER'),('Demo Admin','admin@example.com','01000000001','pbkdf2_sha256$210000$gGux4HpvCkSxuNnhgXgz/g==$wXxkkPiNDkXIqTbSu5q8XyFiktmbXTGa6dNEKh/bikM=','ADMIN');
+INSERT INTO station(name,address,latitude,longitude,capacity,status,opening_hours) VALUES ('Alamein Campus Gate','New Alamein City',30.848,28.955,20,'ACTIVE','24/7'),('Library Station','New Alamein City',30.850,28.958,12,'ACTIVE','08:00-22:00'),('Food Court Station','New Alamein City',30.846,28.960,10,'ACTIVE','10:00-23:00');
+INSERT INTO powerbanks(serial_number,status,battery_level,station_id) VALUES ('PB-1001','AVAILABLE',95,1),('PB-1002','AVAILABLE',87,1),('PB-2001','AVAILABLE',100,2),('PB-3001','MAINTENANCE',30,3);

@@ -1,0 +1,36 @@
+{
+  "description": "Illustrative teaching graph only; not a real street network.",
+  "nodes": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "edges": [
+    [
+      "A",
+      "B",
+      0.6
+    ],
+    [
+      "A",
+      "C",
+      0.8
+    ],
+    [
+      "B",
+      "D",
+      0.7
+    ],
+    [
+      "C",
+      "D",
+      0.9
+    ],
+    [
+      "B",
+      "C",
+      0.5
+    ]
+  ]
+}

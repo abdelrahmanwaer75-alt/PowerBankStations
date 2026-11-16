@@ -1,0 +1,1 @@
+package com.powerbank.entity; import jakarta.persistence.*;import java.time.Instant; @Entity public class AuditLog {@Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; public String actor; public String action; public String details; public Instant createdAt=Instant.now(); public AuditLog(){} }
